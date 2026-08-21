@@ -18,6 +18,8 @@ egrep -c '(vmx|svm)' /proc/cpuinfo
 ```
 Un resultado mayor a `0` confirma que está activa.
 
+![Virtualización](../proyecto1-so1/images/virtualizacion.png)
+
 ---
 
 ## Paso 1 — Instalar KVM y virt-manager en el host
@@ -35,6 +37,9 @@ sudo virsh net-list --all
 Debe aparecer la red `default` en estado `activo`.
 
 > Si `virt-manager` no puede conectar, ábrelo con `sudo virt-manager`.
+
+
+![VirtManager](../proyecto1-so1/images/virtmanager.png)
 
 ---
 
@@ -61,6 +66,18 @@ Repetir 3 veces desde `virt-manager` (ícono "Crear nueva máquina virtual"):
 | Red | Red virtual `default` (NAT) |
 | Nombres | `VM1-containerd`, `VM2-Podman`, `VM3-docker-zot` |
 
+
+![Ins1](../proyecto1-so1/images/inst1.png)
+
+![Ins2](../proyecto1-so1/images/inst2.png)
+
+
+![Ins3](../proyecto1-so1/images/inst3.png)
+
+![Ins4](../proyecto1-so1/images/inst4.png)
+
+![Ins5](../proyecto1-so1/images/inst5.png)
+
 Durante la instalación de Ubuntu Server en cada VM:
 
 1. Idioma y teclado → según preferencia
@@ -82,6 +99,7 @@ Durante la instalación de Ubuntu Server en cada VM:
 | VM3 (docker/zot) | `192.168.122.112` |
 
 ---
+
 
 ## Paso 4 — Verificar acceso a las VMs
 
@@ -160,16 +178,6 @@ podman run --rm hello-world
 ### VM3 — Docker
 
 ```bash
-sudo apt install -y ca-certificates curl gnupg
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
