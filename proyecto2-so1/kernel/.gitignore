@@ -1,0 +1,19 @@
+# Artefactos generados por el sistema de build de modulos del kernel.
+# Solo deben quedar versionados los fuentes: Makefile, *.c y *.h propios.
+
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.symvers
+*.order
+*.cmd
+.*.cmd
+.module-common.o
+.tmp_versions/
+modules.order
+Module.symvers
+Module.markers
+*.a
+*~
