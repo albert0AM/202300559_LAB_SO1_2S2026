@@ -24,8 +24,6 @@ static int continfo_open(struct inode *inode, struct file *file)
     return single_open(file, continfo_show, NULL);
 }
 
-// La struct de operaciones de /proc cambio de nombre/forma entre
-// versiones de kernel. A partir de 5.6 se usa proc_ops.
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(5, 6, 0)
 static const struct proc_ops continfo_fops = {
     .proc_open    = continfo_open,

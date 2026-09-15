@@ -13,8 +13,8 @@
 
 static int continfo_show(struct seq_file *m, void *v)
 {
-    print_mem_global(m);
-    print_processes(m);
+    unsigned long total_ram_kb = print_mem_global(m);
+    print_processes(m, total_ram_kb);
     return 0;
 }
 
