@@ -1,0 +1,31 @@
+=== lun 14 sept 2026 23:56:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789451761_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789451761_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789451761_3 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789451761_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789451761_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789451761_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789451761_4      proyecto2-alto-ram      Up Less than a second
+p2_intruso_1789451761_3       proyecto2-intruso       Up Less than a second
+p2_low-consumo_1789451761_2   proyecto2-low-consumo   Up Less than a second
+p2_intruso_1789451761_1       proyecto2-intruso       Up Less than a second
+=== lun 14 sept 2026 23:58:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789451881_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789451881_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789451881_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789451881_4 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789451881_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789451881_5      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789451881_4   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789451881_3      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789451881_2   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789451881_1      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789451761_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789451761_4      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789451761_3       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789451761_2   proyecto2-low-consumo   Up 2 minutes
+p2_intruso_1789451761_1       proyecto2-intruso       Up 2 minutes
