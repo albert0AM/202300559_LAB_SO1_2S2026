@@ -1,0 +1,29 @@
+services:
+  valkey:
+    image: valkey/valkey:8-alpine
+    container_name: p2_valkey
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - valkey-data:/data
+    command: valkey-server --save 60 1 --loglevel warning
+
+  grafana:
+    image: grafana/grafana:11.1.0
+    container_name: p2_grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - valkey
+    environment:
+      # Credenciales simples para desarrollo. Cambiar en produccion.
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+volumes:
+  valkey-data:
+  grafana-data:
