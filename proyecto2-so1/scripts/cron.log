@@ -29,3 +29,46 @@ p2_alto-ram_1789451761_4      proyecto2-alto-ram      Up 2 minutes
 p2_intruso_1789451761_3       proyecto2-intruso       Up 2 minutes
 p2_low-consumo_1789451761_2   proyecto2-low-consumo   Up 2 minutes
 p2_intruso_1789451761_1       proyecto2-intruso       Up 2 minutes
+=== mar 15 sept 2026 00:14:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789452841_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789452841_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789452841_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789452841_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789452841_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                      IMAGE                STATUS
+p2_alto-cpu_1789452841_5   proyecto2-alto-cpu   Up Less than a second
+p2_alto-ram_1789452841_4   proyecto2-alto-ram   Up Less than a second
+p2_alto-cpu_1789452841_3   proyecto2-alto-cpu   Up Less than a second
+p2_alto-cpu_1789452841_2   proyecto2-alto-cpu   Up Less than a second
+p2_alto-cpu_1789452841_1   proyecto2-alto-cpu   Up 1 second
+=== mar 15 sept 2026 00:16:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789452961_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789452961_2 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789452961_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789452961_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789452961_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                      IMAGE                STATUS
+p2_alto-ram_1789452961_5   proyecto2-alto-ram   Up Less than a second
+p2_alto-ram_1789452961_4   proyecto2-alto-ram   Up Less than a second
+p2_alto-cpu_1789452961_3   proyecto2-alto-cpu   Up Less than a second
+p2_alto-ram_1789452961_2   proyecto2-alto-ram   Up 1 second
+p2_alto-ram_1789452961_1   proyecto2-alto-ram   Up 1 second
+p2_alto-ram_1789452841_4   proyecto2-alto-ram   Up 2 minutes
+p2_alto-cpu_1789452841_3   proyecto2-alto-cpu   Up 2 minutes
+=== mar 15 sept 2026 00:18:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789453081_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789453081_2 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789453081_3 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789453081_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789453081_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789453081_5      proyecto2-alto-ram      Up Less than a second
+p2_alto-ram_1789453081_4      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789453081_3   proyecto2-low-consumo   Up Less than a second
+p2_intruso_1789453081_2       proyecto2-intruso       Up Less than a second
+p2_low-consumo_1789453081_1   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789452961_3      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789452961_2      proyecto2-alto-ram      Up 2 minutes

@@ -2,3 +2,9 @@ crontab -e   # y comenta la línea poniendo un # al principio, o bórrala
 
 cd ~/202300559_LAB_SO1_2S2026/proyecto2-so1/scripts
 ./cleanup_containers.sh
+
+Problema docker
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+Solucion:
+newgrp docker
+groups
