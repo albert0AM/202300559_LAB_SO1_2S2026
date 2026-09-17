@@ -3,12 +3,14 @@ package ebpfkill
 import (
 	"bytes"
 	"encoding/binary"
+	"errors"
 	"fmt"
+	"log"
+	"time"
 
 	"github.com/cilium/ebpf/link"
 	"github.com/cilium/ebpf/ringbuf"
 )
-
 
 type Event struct {
 	CallerPID uint32
@@ -17,9 +19,8 @@ type Event struct {
 	Comm      string
 }
 
-
 type Monitor struct {
-	objs killmonitorObjects // generado por bpf2go (gen.go)
+	objs killmonitorObjects
 	tp   link.Link
 	rd   *ringbuf.Reader
 }
@@ -46,17 +47,15 @@ func Start() (*Monitor, error) {
 	return &Monitor{objs: objs, tp: tp, rd: rd}, nil
 }
 
-
 func (m *Monitor) Close() {
 	m.rd.Close()
 	m.tp.Close()
 	m.objs.Close()
 }
 
-
 type rawEvent struct {
 	CallerPID uint32
-	_         [4]byte // padding, no se usa
+	_         [4]byte
 	TargetPID int64
 	Sig       int64
 	Comm      [16]byte
@@ -67,15 +66,28 @@ func (m *Monitor) Events() <-chan Event {
 	go func() {
 		defer close(ch)
 		for {
+			// Timeout de 500ms para no bloquearse indefinidamente
+			// en kernels donde el wakeup de epoll del ring buffer falla.
+			m.rd.SetDeadline(time.Now().Add(500 * time.Millisecond))
+
 			record, err := m.rd.Read()
 			if err != nil {
-				return 
+				if errors.Is(err, ringbuf.ErrClosed) {
+					log.Printf("[ebpf-monitor] Ring buffer cerrado, saliendo.")
+					return
+				}
+				// Timeout o error transitorio — reintentamos
+				continue
 			}
 
 			var raw rawEvent
 			if err := binary.Read(bytes.NewReader(record.RawSample), binary.LittleEndian, &raw); err != nil {
-				continue // evento corrupto/incompleto, lo ignoramos
+				log.Printf("[ebpf-monitor] ERROR parseando evento: %v", err)
+				continue
 			}
+
+			log.Printf("[ebpf-debug] evento: CallerPID=%d TargetPID=%d Sig=%d Comm=%q",
+				raw.CallerPID, raw.TargetPID, raw.Sig, string(bytes.TrimRight(raw.Comm[:], "\x00")))
 
 			ch <- Event{
 				CallerPID: raw.CallerPID,

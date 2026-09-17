@@ -5,6 +5,7 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
+	"syscall"
 	"time"
 )
 
@@ -73,7 +74,14 @@ func GetPID(id string) (int, error) {
 	}
 	return pid, nil
 }
-func Kill(id string) error {
+func Kill(pid int) error {
+	if err := syscall.Kill(pid, syscall.SIGKILL); err != nil {
+		return fmt.Errorf("kill(%d) fallo: %w", pid, err)
+	}
+	return nil
+}
+
+func KillByDocker(id string) error {
 	cmd := exec.Command("docker", "kill", id)
 	out, err := cmd.CombinedOutput()
 	if err != nil {

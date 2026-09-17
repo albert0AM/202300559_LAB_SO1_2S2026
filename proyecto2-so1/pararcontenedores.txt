@@ -8,3 +8,5 @@ permission denied while trying to connect to the docker API at unix:///var/run/d
 Solucion:
 newgrp docker
 groups
+
+sudo crontab -e

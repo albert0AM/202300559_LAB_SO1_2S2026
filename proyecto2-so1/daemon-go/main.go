@@ -191,15 +191,38 @@ func enforceContainerLimits() int {
 	log.Printf("[decision] %d contenedores corriendo, matando %d para mantener el balance", len(all), len(toKill))
 	for _, c := range toKill {
 		pid, pidErr := containers.GetPID(c.ID)
+		if pidErr != nil {
+			log.Printf("    [ERROR] no se pudo obtener el PID de %s (%s): %v", c.Name, c.Tipo, pidErr)
+			if err := containers.KillByDocker(c.ID); err != nil {
+				log.Printf("    [ERROR] no se pudo matar %s (%s): %v", c.Name, c.Tipo, err)
+				continue
+			}
+			log.Printf("    [MATADO] %s (tipo=%s) - via docker kill, sin verificacion eBPF", c.Name, c.Tipo)
+			if dataStore != nil {
+				if err := dataStore.SaveKillEvent(c, false); err != nil {
+					log.Printf("    [valkey] Error guardando evento: %v", err)
+				}
+			}
+			continue
+		}
 
-		if err := containers.Kill(c.ID); err != nil {
+		var evCh <-chan ebpfkill.Event
+		canConfirm := ebpfRegistry != nil
+		if canConfirm {
+			evCh = ebpfRegistry.Register(int64(pid))
+		}
+
+		if err := containers.Kill(pid); err != nil {
 			log.Printf("    [ERROR] no se pudo matar %s (%s): %v", c.Name, c.Tipo, err)
+			if canConfirm {
+				ebpfRegistry.Unregister(int64(pid))
+			}
 			continue
 		}
 
 		confirmado := false
-		if pidErr == nil && ebpfRegistry != nil {
-			if _, ok := ebpfRegistry.WaitFor(int64(pid), KillConfirmTimeout); ok {
+		if canConfirm {
+			if _, ok := ebpfkill.Wait(int64(pid), evCh, ebpfRegistry, KillConfirmTimeout); ok {
 				confirmado = true
 				log.Printf("    [MATADO] %s (tipo=%s) - confirmado por eBPF (PID %d)", c.Name, c.Tipo, pid)
 			} else {
@@ -230,7 +253,7 @@ func printTopByCPU(curr, prev *procinfo.Snapshot, elapsed float64) {
 	for _, p := range curr.Procs {
 		old, ok := prevByPID[p.PID]
 		if !ok {
-			continue // proceso nuevo, no tenemos punto de comparacion
+			continue 
 		}
 		cpuPct := procinfo.CPUPercent(old.UTime, old.STime, p.UTime, p.STime, elapsed)
 		if cpuPct > 0.01 {
@@ -243,7 +266,7 @@ func printTopByCPU(curr, prev *procinfo.Snapshot, elapsed float64) {
 	}
 }
 
-// startDockerCompose levanta Grafana + Valkey con docker compose.
+
 func startDockerCompose() error {
 	cmd := exec.Command("docker", "compose", "up", "-d")
 	cmd.Dir = dockerComposeDir
@@ -254,7 +277,7 @@ func startDockerCompose() error {
 	return nil
 }
 
-// loadKernelModule ejecuta insmod sobre el .ko del proyecto.
+
 func loadKernelModule() error {
 	cmd := exec.Command("insmod", kernelModulePath)
 	out, err := cmd.CombinedOutput()
@@ -268,7 +291,7 @@ func loadKernelModule() error {
 	return nil
 }
 
-// unloadKernelModule ejecuta rmmod.
+
 func unloadKernelModule() error {
 	cmd := exec.Command("rmmod", kernelModuleName)
 	out, err := cmd.CombinedOutput()
@@ -278,7 +301,6 @@ func unloadKernelModule() error {
 	return nil
 }
 
-// installCronjob agrega la linea de cron si no existe ya.
 func installCronjob() error {
 	listCmd := exec.Command("crontab", "-l")
 	existing, _ := listCmd.Output()
@@ -303,7 +325,6 @@ func installCronjob() error {
 	return nil
 }
 
-// removeCronjob quita la linea especifica del crontab, dejando el resto intacto.
 func removeCronjob() error {
 	listCmd := exec.Command("crontab", "-l")
 	existing, err := listCmd.Output()
