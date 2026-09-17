@@ -1,10 +1,9 @@
-// Package containers habla con el Docker CLI para listar y matar los
-// contenedores que el proyecto 
 package containers
 
 import (
 	"fmt"
 	"os/exec"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -21,17 +20,17 @@ const managedLabelFilter = "label=proyecto2.managed=true"
 
 const dockerCreatedLayout = "2006-01-02 15:04:05 -0700 MST"
 
-func ListManaged() ([]Container, error) {
 
+func ListManaged() ([]Container, error) {
 	format := `{{.ID}}|||{{.Names}}|||{{.Label "proyecto2.tipo"}}|||{{.CreatedAt}}`
 
 	cmd := exec.Command("docker", "ps",
 		"--filter", managedLabelFilter,
 		"--format", format,
 	)
-	out, err := cmd.Output()
+	out, err := cmd.CombinedOutput()
 	if err != nil {
-		return nil, fmt.Errorf("docker ps fallo: %w", err)
+		return nil, fmt.Errorf("docker ps fallo: %w (salida: %s)", err, strings.TrimSpace(string(out)))
 	}
 
 	trimmed := strings.TrimSpace(string(out))
@@ -43,7 +42,7 @@ func ListManaged() ([]Container, error) {
 	for _, line := range strings.Split(trimmed, "\n") {
 		parts := strings.Split(line, "|||")
 		if len(parts) < 4 {
-			continue 
+			continue // linea rara/incompleta, la ignoramos
 		}
 
 		created, err := time.Parse(dockerCreatedLayout, parts[3])
@@ -61,7 +60,19 @@ func ListManaged() ([]Container, error) {
 	return result, nil
 }
 
-// Kill mata un contenedor enviando SIGKILL (docker kill). 
+func GetPID(id string) (int, error) {
+	cmd := exec.Command("docker", "inspect", "-f", "{{.State.Pid}}", id)
+	out, err := cmd.Output()
+	if err != nil {
+		return 0, fmt.Errorf("docker inspect (PID) fallo para %s: %w", id, err)
+	}
+
+	pid, err := strconv.Atoi(strings.TrimSpace(string(out)))
+	if err != nil {
+		return 0, fmt.Errorf("PID invalido para %s: %w", id, err)
+	}
+	return pid, nil
+}
 func Kill(id string) error {
 	cmd := exec.Command("docker", "kill", id)
 	out, err := cmd.CombinedOutput()

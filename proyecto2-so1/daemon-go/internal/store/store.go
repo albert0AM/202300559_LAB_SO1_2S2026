@@ -11,8 +11,9 @@ import (
 	"proyecto2-so1/daemon/internal/containers"
 	"proyecto2-so1/daemon/internal/procinfo"
 )
-
 const maxHistoryEntries = 1000
+
+
 type Store struct {
 	rdb *redis.Client
 	ctx context.Context
@@ -29,7 +30,6 @@ func Connect(addr string) (*Store, error) {
 	return &Store{rdb: rdb, ctx: ctx}, nil
 }
 
-// Close cierra la conexion. Se debe llamar en el cleanup del daemon.
 func (s *Store) Close() error {
 	return s.rdb.Close()
 }
@@ -41,13 +41,12 @@ type killEvent struct {
 	Confirmado  bool      `json:"confirmado"`
 }
 
-
-func (s *Store) SaveKillEvent(c containers.Container) error {
+func (s *Store) SaveKillEvent(c containers.Container, confirmado bool) error {
 	ev := killEvent{
 		Nombre:     c.Name,
 		Tipo:       c.Tipo,
 		Timestamp:  time.Now(),
-		Confirmado: true, // TODO: cambiar a false hasta confirmacion via eBPF
+		Confirmado: confirmado,
 	}
 
 	data, err := json.Marshal(ev)
@@ -73,7 +72,6 @@ type memSnapshot struct {
 	CantProcesos  int       `json:"cant_procesos"`
 	CantContenedores int    `json:"cant_contenedores"`
 }
-
 
 func (s *Store) SaveSnapshot(mem procinfo.MemInfo, cantProcesos int, cantContenedores int) error {
 	snap := memSnapshot{
