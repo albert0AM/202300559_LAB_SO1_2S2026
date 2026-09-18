@@ -31,15 +31,7 @@ func loadKillmonitor() (*ebpf.CollectionSpec, error) {
 	return spec, err
 }
 
-// loadKillmonitorObjects loads killmonitor and converts it into a struct.
-//
-// The following types are suitable as obj argument:
-//
-//	*killmonitorObjects
-//	*killmonitorPrograms
-//	*killmonitorMaps
-//
-// See ebpf.CollectionSpec.LoadAndAssign documentation for details.
+
 func loadKillmonitorObjects(obj any, opts *ebpf.CollectionOptions) error {
 	spec, err := loadKillmonitor()
 	if err != nil {
@@ -49,9 +41,7 @@ func loadKillmonitorObjects(obj any, opts *ebpf.CollectionOptions) error {
 	return spec.LoadAndAssign(obj, opts)
 }
 
-// killmonitorSpecs contains maps and programs before they are loaded into the kernel.
-//
-// It can be passed ebpf.CollectionSpec.Assign.
+
 type killmonitorSpecs struct {
 	killmonitorProgramSpecs
 	killmonitorMapSpecs

@@ -1,0 +1,497 @@
+{
+  "uid": "proyecto2-so1-grafana",
+  "title": "Proyecto 2 - Sonda de Kernel y Daemon en Go",
+  "tags": ["SO1", "proyecto2"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "30s",
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "templating": {
+    "list": []
+  },
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "id": 1,
+      "type": "stat",
+      "title": "Total de RAM",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 4, "w": 3, "x": 0, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "decbytes",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/estado",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [{ "selector": "ram_total", "text": "RAM Total", "type": "number" }],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "stat",
+      "title": "RAM Usada",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 4, "w": 3, "x": 3, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "decbytes",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "orange", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/estado",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [{ "selector": "ram_usada", "text": "RAM Usada", "type": "number" }],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "stat",
+      "title": "Memoria Libre",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 4, "w": 3, "x": 6, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "decbytes",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/estado",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [{ "selector": "ram_libre", "text": "Memoria Libre", "type": "number" }],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "stat",
+      "title": "Contenedores Eliminados (Total)",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 4, "w": 3, "x": 9, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "short",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/estado",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [{ "selector": "eliminados_totales", "text": "Eliminados", "type": "number" }],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "stat",
+      "title": "Eliminados Confirmados (eBPF)",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 4, "w": 3, "x": 0, "y": 4 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "short",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "blue", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/estado",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [{ "selector": "confirmados_ebpf", "text": "Confirmados eBPF", "type": "number" }],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "timeseries",
+      "title": "Uso de RAM a lo largo del tiempo",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 8, "w": 9, "x": 3, "y": 4 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 15,
+            "gradientMode": "none",
+            "pointSize": 5,
+            "showPoints": "never",
+            "spanNulls": false,
+            "insertNulls": false,
+            "axisPlacement": "auto",
+            "axisLabel": "",
+            "axisColorMode": "series",
+            "axisBorderShow": false,
+            "scaleDistribution": { "type": "linear" },
+            "axisCenteredZero": false,
+            "stacking": { "mode": "none", "group": "A" },
+            "thresholdsStyle": { "mode": "off" },
+            "lineStyle": { "fill": "solid" }
+          },
+          "unit": "decbytes",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": { "showLegend": true, "displayMode": "list", "placement": "bottom", "calcs": [] },
+        "tooltip": { "mode": "multi", "sort": "none" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "timeseries",
+          "url": "http://host.docker.internal:8080/api/snapshots",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [
+            { "selector": "time", "text": "Time", "type": "timestamp_epoch" },
+            { "selector": "ram_usada", "text": "RAM Usada", "type": "number" },
+            { "selector": "ram_libre", "text": "RAM Libre", "type": "number" }
+          ],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "barchart",
+      "title": "Contenedores Eliminados a lo largo del tiempo",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 8, "w": 9, "x": 3, "y": 12 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "custom": {
+            "fillOpacity": 90,
+            "lineWidth": 1,
+            "barAlignment": 0,
+            "showValue": "never",
+            "stacking": { "mode": "none", "group": "A" }
+          },
+          "unit": "short",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "orientation": "auto",
+        "legend": { "showLegend": true, "displayMode": "list", "placement": "bottom", "calcs": [] },
+        "tooltip": { "mode": "multi", "sort": "none" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "timeseries",
+          "url": "http://host.docker.internal:8080/api/kills/series",
+          "url_options": { "method": "GET", "data": "", "params": [{ "key": "bucket", "value": "60" }] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [
+            { "selector": "time", "text": "Time", "type": "timestamp_epoch" },
+            { "selector": "eliminados", "text": "Eliminados", "type": "number" }
+          ],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "piechart",
+      "title": "Top 5 Contenedores por Consumo de RAM",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 8, "w": 6, "x": 0, "y": 12 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "unit": "decbytes",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "displayLabels": ["name", "value"],
+        "legend": { "displayMode": "list", "placement": "right", "showLegend": true, "values": ["value"] },
+        "pieType": "pie",
+        "reduceOptions": { "calcs": ["sum"], "fields": "", "values": true },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/ranking/ram",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [
+            { "selector": "nombre", "text": "Contenedor", "type": "string" },
+            { "selector": "valor", "text": "RAM", "type": "number" }
+          ],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "piechart",
+      "title": "Top 5 Contenedores por Consumo de CPU",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 8, "w": 6, "x": 6, "y": 12 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "unit": "percent",
+          "max": 100,
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "options": {
+        "displayLabels": ["name", "value"],
+        "legend": { "displayMode": "list", "placement": "right", "showLegend": true, "values": ["value"] },
+        "pieType": "pie",
+        "reduceOptions": { "calcs": ["sum"], "fields": "", "values": true },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/ranking/cpu",
+          "url_options": { "method": "GET", "data": "", "params": [] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [
+            { "selector": "nombre", "text": "Contenedor", "type": "string" },
+            { "selector": "valor", "text": "CPU", "type": "number" }
+          ],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "table",
+      "title": "Eventos de Eliminacion (capturas eBPF)",
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "infinity"
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 20 },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "unit": "short",
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }] },
+          "mappings": []
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "Confirmado" },
+            "properties": [
+              { "id": "custom.width", "value": 110 },
+              { "id": "custom.align", "value": "center" }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "Time" },
+            "properties": [{ "id": "custom.width", "value": 180 }]
+          }
+        ]
+      },
+      "options": {
+        "showHeader": true,
+        "footer": { "show": false, "reducer": ["sum"], "countRows": false, "fields": "" },
+        "sortBy": [{ "displayName": "Time", "desc": true }]
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "infinity" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "url": "http://host.docker.internal:8080/api/kills",
+          "url_options": { "method": "GET", "data": "", "params": [{ "key": "confirmados", "value": "true" }] },
+          "parser": "backend",
+          "root_selector": "",
+          "columns": [
+            { "selector": "time", "text": "Time", "type": "timestamp_epoch" },
+            { "selector": "nombre", "text": "Contenedor", "type": "string" },
+            { "selector": "tipo", "text": "Tipo", "type": "string" },
+            { "selector": "confirmado", "text": "Confirmado", "type": "boolean" }
+          ],
+          "filters": [],
+          "json_options": { "columnar": false, "root_is_not_array": false }
+        }
+      ]
+    }
+  ]
+}

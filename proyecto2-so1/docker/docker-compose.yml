@@ -10,7 +10,7 @@ services:
     command: valkey-server --save 60 1 --loglevel warning
 
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:12.3.0
     container_name: p2_grafana
     restart: unless-stopped
     ports:
@@ -21,8 +21,16 @@ services:
       # Credenciales simples para desarrollo. Cambiar en produccion.
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      # Plugin Infinity: permite a Grafana leer los endpoints REST que expone
+      # el Daemon de Go (que a su vez lee los logs guardados en Valkey).
+      - GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/var/lib/grafana/dashboards/proyecto2_grafana_dashboard.json
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
 
 volumes:
   valkey-data:

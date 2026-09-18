@@ -21,6 +21,7 @@ type ProcEntry struct {
 	VSZKB      uint64
 	RSSKB      uint64
 	MemPercent float64
+	CPUPercent float64
 	UTime      uint64
 	STime      uint64
 }
@@ -115,6 +116,10 @@ func parseProcLine(line string) (ProcEntry, error) {
 		case strings.HasPrefix(field, "%MEM:"):
 			v := strings.TrimSuffix(strings.TrimSpace(strings.TrimPrefix(field, "%MEM:")), "%")
 			entry.MemPercent, _ = strconv.ParseFloat(strings.TrimSpace(v), 64)
+
+		case strings.HasPrefix(field, "%CPU:"):
+			v := strings.TrimSuffix(strings.TrimSpace(strings.TrimPrefix(field, "%CPU:")), "%")
+			entry.CPUPercent, _ = strconv.ParseFloat(strings.TrimSpace(v), 64)
 
 		case strings.HasPrefix(field, "utime:"):
 			v := strings.TrimSpace(strings.TrimPrefix(field, "utime:"))

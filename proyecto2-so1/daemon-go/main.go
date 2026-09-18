@@ -11,6 +11,7 @@ import (
 	"syscall"
 	"time"
 
+	"proyecto2-so1/daemon/internal/api"
 	"proyecto2-so1/daemon/internal/containers"
 	"proyecto2-so1/daemon/internal/decision"
 	"proyecto2-so1/daemon/internal/ebpfkill"
@@ -27,6 +28,7 @@ const ValkeyAddr = "localhost:6379"
 var dataStore *store.Store
 var ebpfMonitor *ebpfkill.Monitor
 var ebpfRegistry *ebpfkill.Registry
+var apiServer *api.Server
 
 const KillConfirmTimeout = 3 * time.Second
 
@@ -101,6 +103,12 @@ func setup() error {
 		log.Println("[setup] Conectado a Valkey correctamente.")
 	}
 
+	apiServer = api.New(dataStore)
+	if err := apiServer.Start(); err != nil {
+		return fmt.Errorf("[setup] no se pudo iniciar el API server: %w", err)
+	}
+	log.Println("[setup] API HTTP escuchando en :8080 para Grafana.")
+
 	log.Printf("[setup] Listo. Leyendo desde %s cada %s\n", procinfo.ProcPath(CARNET), PollInterval)
 	return nil
 }
@@ -125,6 +133,13 @@ func cleanup() {
 		log.Println("[cleanup] Cerrando conexion a Valkey...")
 		if err := dataStore.Close(); err != nil {
 			log.Printf("[cleanup] Error cerrando Valkey: %v", err)
+		}
+	}
+
+	if apiServer != nil {
+		log.Println("[cleanup] Deteniendo API HTTP...")
+		if err := apiServer.Shutdown(); err != nil {
+			log.Printf("[cleanup] Error deteniendo API: %v", err)
 		}
 	}
 
@@ -161,7 +176,7 @@ func runLoop(ctx context.Context) {
 				printTopByCPU(snap, prevSnap, elapsed)
 			}
 
-			cantContenedores := enforceContainerLimits()
+			cantContenedores := enforceContainerLimits(snap)
 
 			if dataStore != nil {
 				if err := dataStore.SaveSnapshot(snap.Mem, len(snap.Procs), cantContenedores); err != nil {
@@ -175,14 +190,41 @@ func runLoop(ctx context.Context) {
 	}
 }
 
-func enforceContainerLimits() int {
+func enforceContainerLimits(snap *procinfo.Snapshot) int {
 	all, err := containers.ListManaged()
 	if err != nil {
 		log.Printf("[decision] Error listando contenedores: %v", err)
 		return 0
 	}
 
-	toKill := decision.Decide(all)
+	procsByPID := make(map[int]procinfo.ProcEntry, len(snap.Procs))
+	for _, p := range snap.Procs {
+		procsByPID[p.PID] = p
+	}
+
+	for i := range all {
+		pid, err := containers.GetPID(all[i].ID)
+		if err != nil {
+			log.Printf("[decision] no se pudo obtener el PID de %s (%s): %v", all[i].Name, all[i].Tipo, err)
+			continue
+		}
+		all[i].PID = pid
+
+		if p, ok := procsByPID[pid]; ok {
+			all[i].RSSKB = p.RSSKB
+			all[i].VSZKB = p.VSZKB
+			all[i].CPUPercent = p.CPUPercent
+			all[i].MemPercent = p.MemPercent
+		}
+	}
+
+	if dataStore != nil {
+		if err := dataStore.SaveContainerMetrics(all); err != nil {
+			log.Printf("[valkey] Error guardando metricas de contenedores: %v", err)
+		}
+	}
+
+	toKill := decision.Decide(all, snap)
 	if len(toKill) == 0 {
 		log.Printf("[decision] %d contenedores del proyecto corriendo, nada que matar", len(all))
 		return len(all)
@@ -190,10 +232,15 @@ func enforceContainerLimits() int {
 
 	log.Printf("[decision] %d contenedores corriendo, matando %d para mantener el balance", len(all), len(toKill))
 	for _, c := range toKill {
-		pid, pidErr := containers.GetPID(c.ID)
+		pid := c.PID
+		var pidErr error
+		if pid == 0 {
+			pid, pidErr = containers.GetPID(c.ID)
+		}
+
 		if pidErr != nil {
 			log.Printf("    [ERROR] no se pudo obtener el PID de %s (%s): %v", c.Name, c.Tipo, pidErr)
-			if err := containers.KillByDocker(c.ID); err != nil {
+			if err := containers.Kill(c.ID); err != nil {
 				log.Printf("    [ERROR] no se pudo matar %s (%s): %v", c.Name, c.Tipo, err)
 				continue
 			}
@@ -212,7 +259,7 @@ func enforceContainerLimits() int {
 			evCh = ebpfRegistry.Register(int64(pid))
 		}
 
-		if err := containers.Kill(pid); err != nil {
+		if err := containers.Kill(c.ID); err != nil {
 			log.Printf("    [ERROR] no se pudo matar %s (%s): %v", c.Name, c.Tipo, err)
 			if canConfirm {
 				ebpfRegistry.Unregister(int64(pid))
@@ -253,7 +300,7 @@ func printTopByCPU(curr, prev *procinfo.Snapshot, elapsed float64) {
 	for _, p := range curr.Procs {
 		old, ok := prevByPID[p.PID]
 		if !ok {
-			continue 
+			continue
 		}
 		cpuPct := procinfo.CPUPercent(old.UTime, old.STime, p.UTime, p.STime, elapsed)
 		if cpuPct > 0.01 {
@@ -266,7 +313,6 @@ func printTopByCPU(curr, prev *procinfo.Snapshot, elapsed float64) {
 	}
 }
 
-
 func startDockerCompose() error {
 	cmd := exec.Command("docker", "compose", "up", "-d")
 	cmd.Dir = dockerComposeDir
@@ -276,7 +322,6 @@ func startDockerCompose() error {
 	}
 	return nil
 }
-
 
 func loadKernelModule() error {
 	cmd := exec.Command("insmod", kernelModulePath)
@@ -290,7 +335,6 @@ func loadKernelModule() error {
 	}
 	return nil
 }
-
 
 func unloadKernelModule() error {
 	cmd := exec.Command("rmmod", kernelModuleName)

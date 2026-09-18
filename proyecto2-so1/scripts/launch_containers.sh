@@ -37,6 +37,7 @@ for i in $(seq 1 "$NUM_CONTAINERS"); do
         --name "$nombre" \
         --label "proyecto2.tipo=${tipo}" \
         --label "proyecto2.managed=true" \
+        --security-opt apparmor=unconfined \
         "$imagen" \
         > /dev/null
 

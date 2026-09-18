@@ -11,7 +11,14 @@ import (
 	"proyecto2-so1/daemon/internal/containers"
 	"proyecto2-so1/daemon/internal/procinfo"
 )
+
 const maxHistoryEntries = 1000
+
+const (
+	keySnapshots       = "log:snapshots_memoria"
+	keyKills           = "log:eventos_eliminados"
+	keyContainerMetric = "log:metricas_contenedores"
+)
 
 
 type Store struct {
@@ -66,11 +73,23 @@ func (s *Store) SaveKillEvent(c containers.Container, confirmado bool) error {
 }
 
 type memSnapshot struct {
-	Timestamp     time.Time `json:"timestamp"`
-	RAMTotalKB    uint64    `json:"ram_total_kb"`
-	RAMUsadaKB    uint64    `json:"ram_usada_kb"`
-	CantProcesos  int       `json:"cant_procesos"`
-	CantContenedores int    `json:"cant_contenedores"`
+	Timestamp        time.Time `json:"timestamp"`
+	RAMTotalKB       uint64    `json:"ram_total_kb"`
+	RAMUsadaKB       uint64    `json:"ram_usada_kb"`
+	CantProcesos     int       `json:"cant_procesos"`
+	CantContenedores int       `json:"cant_contenedores"`
+}
+
+type containerMetric struct {
+	Timestamp time.Time `json:"timestamp"`
+	ID        string    `json:"id"`
+	Nombre    string    `json:"nombre"`
+	Tipo      string    `json:"tipo"`
+	PID       int       `json:"pid"`
+	VSZKB     uint64    `json:"vsz_kb"`
+	RSSKB     uint64    `json:"rss_kb"`
+	CPUPct    float64   `json:"cpu_pct"`
+	MemPct    float64   `json:"mem_pct"`
 }
 
 func (s *Store) SaveSnapshot(mem procinfo.MemInfo, cantProcesos int, cantContenedores int) error {
@@ -88,11 +107,94 @@ func (s *Store) SaveSnapshot(mem procinfo.MemInfo, cantProcesos int, cantContene
 	}
 
 	pipe := s.rdb.TxPipeline()
-	pipe.LPush(s.ctx, "log:snapshots_memoria", data)
-	pipe.LTrim(s.ctx, "log:snapshots_memoria", 0, maxHistoryEntries-1)
+	pipe.LPush(s.ctx, keySnapshots, data)
+	pipe.LTrim(s.ctx, keySnapshots, 0, maxHistoryEntries-1)
 	_, err = pipe.Exec(s.ctx)
 	if err != nil {
 		return fmt.Errorf("no se pudo guardar el snapshot en Valkey: %w", err)
 	}
 	return nil
+}
+
+func (s *Store) SaveContainerMetrics(procs []containers.Container) error {
+	if len(procs) == 0 {
+		return nil
+	}
+
+	now := time.Now()
+	pipe := s.rdb.TxPipeline()
+	for _, c := range procs {
+		m := containerMetric{
+			Timestamp: now,
+			ID:        c.ID,
+			Nombre:    c.Name,
+			Tipo:      c.Tipo,
+			PID:       c.PID,
+			VSZKB:     c.VSZKB,
+			RSSKB:     c.RSSKB,
+			CPUPct:    c.CPUPercent,
+			MemPct:    c.MemPercent,
+		}
+		data, err := json.Marshal(m)
+		if err != nil {
+			continue
+		}
+		pipe.LPush(s.ctx, keyContainerMetric, data)
+	}
+	pipe.LTrim(s.ctx, keyContainerMetric, 0, maxHistoryEntries-1)
+	if _, err := pipe.Exec(s.ctx); err != nil {
+		return fmt.Errorf("no se pudo guardar las metricas en Valkey: %w", err)
+	}
+	return nil
+}
+
+func (s *Store) GetSnapshots() ([]memSnapshot, error) {
+	vals, err := s.rdb.LRange(s.ctx, keySnapshots, 0, -1).Result()
+	if err != nil {
+		return nil, fmt.Errorf("LRANGE snapshots fallo: %w", err)
+	}
+
+	result := make([]memSnapshot, 0, len(vals))
+	for i := len(vals) - 1; i >= 0; i-- {
+		var m memSnapshot
+		if err := json.Unmarshal([]byte(vals[i]), &m); err != nil {
+			continue
+		}
+		result = append(result, m)
+	}
+	return result, nil
+}
+
+func (s *Store) GetKills() ([]killEvent, error) {
+	vals, err := s.rdb.LRange(s.ctx, keyKills, 0, -1).Result()
+	if err != nil {
+		return nil, fmt.Errorf("LRANGE kills fallo: %w", err)
+	}
+
+	result := make([]killEvent, 0, len(vals))
+	for i := len(vals) - 1; i >= 0; i-- {
+		var k killEvent
+		if err := json.Unmarshal([]byte(vals[i]), &k); err != nil {
+			continue
+		}
+		result = append(result, k)
+	}
+	return result, nil
+}
+
+func (s *Store) GetContainerMetrics() ([]containerMetric, error) {
+	vals, err := s.rdb.LRange(s.ctx, keyContainerMetric, 0, -1).Result()
+	if err != nil {
+		return nil, fmt.Errorf("LRANGE metricas contenedores fallo: %w", err)
+	}
+
+	result := make([]containerMetric, 0, len(vals))
+	for i := len(vals) - 1; i >= 0; i-- {
+		var m containerMetric
+		if err := json.Unmarshal([]byte(vals[i]), &m); err != nil {
+			continue
+		}
+		result = append(result, m)
+	}
+	return result, nil
 }

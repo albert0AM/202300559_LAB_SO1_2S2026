@@ -1700,3 +1700,1628 @@ p2_intruso_1789660561_2       proyecto2-intruso       Up Less than a second
 p2_alto-ram_1789660561_1      proyecto2-alto-ram      Up 1 second
 p2_alto-cpu_1789660455_5      proyecto2-alto-cpu      Up About a minute
 p2_alto-cpu_1789660455_4      proyecto2-alto-cpu      Up About a minute
+=== jue 17 sept 2026 10:26:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789662361_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789662361_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_low-consumo_1789662361_3 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789662361_4 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789662361_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up Less than a second
+p2_intruso_1789662361_4       proyecto2-intruso       Up Less than a second
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up Less than a second
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 1 second
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 1 second
+p2_intruso_1789662228_5       proyecto2-intruso       Up 2 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 2 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 29 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 29 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 30 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 30 minutes
+=== jue 17 sept 2026 10:28:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789662481_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789662481_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789662481_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789662481_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789662481_5 (tipo=intruso, imagen=proyecto2-intruso)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_intruso_1789662481_5       proyecto2-intruso       Up Less than a second
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up Less than a second
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 4 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 4 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 31 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 31 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 32 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 32 minutes
+=== jue 17 sept 2026 10:30:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789662601_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789662601_2 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789662601_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789662601_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789662601_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up Less than a second
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 1 second
+p2_intruso_1789662601_2       proyecto2-intruso       Up 2 seconds
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 2 seconds
+p2_intruso_1789662481_5       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 6 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 6 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 33 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 33 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 34 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 34 minutes
+=== jue 17 sept 2026 10:32:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789662721_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789662721_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789662721_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789662721_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789662721_5 (tipo=intruso, imagen=proyecto2-intruso)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_intruso_1789662721_5       proyecto2-intruso       Up Less than a second
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up Less than a second
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 2 seconds
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 2 seconds
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 2 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 6 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 8 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 8 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 35 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 35 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 36 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 36 minutes
+=== jue 17 sept 2026 10:34:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789662841_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789662841_2 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789662841_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789662841_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789662841_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 2 seconds
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 3 seconds
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 4 seconds
+p2_intruso_1789662721_5       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 4 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 6 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 8 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 8 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 10 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 10 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 37 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 37 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 38 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 38 minutes
+=== jue 17 sept 2026 10:36:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789662961_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789662961_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789662961_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789662961_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789662961_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 1 second
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 1 second
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 2 seconds
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up About a minute
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 2 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 6 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 6 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 10 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 10 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 12 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 12 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 39 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 39 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 40 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 40 minutes
+=== jue 17 sept 2026 10:38:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789663081_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789663081_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789663081_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789663081_4 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789663081_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up Less than a second
+p2_intruso_1789663081_4       proyecto2-intruso       Up Less than a second
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 2 seconds
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up About a minute
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 3 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 3 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 4 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 5 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 5 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 8 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 12 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 12 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 14 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 14 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 41 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 41 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 42 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 42 minutes
+=== jue 17 sept 2026 10:40:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789663201_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789663201_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789663201_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789663201_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789663201_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 1 second
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 1 second
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 2 seconds
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 2 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 5 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 6 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 10 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 12 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 14 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 14 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 14 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 14 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 16 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 16 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 43 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 43 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 44 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 44 minutes
+=== jue 17 sept 2026 10:42:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789663321_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789663321_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789663321_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789663321_4 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_low-consumo_1789663321_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up Less than a second
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 2 seconds
+p2_intruso_1789663321_1       proyecto2-intruso       Up 2 seconds
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 4 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 7 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 8 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 12 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 12 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 14 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 16 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 16 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 16 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 16 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 18 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 18 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 18 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 45 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 45 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 46 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 46 minutes
+=== jue 17 sept 2026 10:44:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789663441_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789663441_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789663441_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789663441_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789663441_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 1 second
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 2 seconds
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 3 seconds
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 3 seconds
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 2 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 6 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 6 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 8 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 10 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 12 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 14 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 14 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 14 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 16 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 18 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 18 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 18 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 18 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 18 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 20 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 20 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 20 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 47 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 47 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 48 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 48 minutes
+=== jue 17 sept 2026 10:46:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789663561_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789663561_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789663561_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789663561_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789663561_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 1 second
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 2 seconds
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 2 seconds
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 2 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 4 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 8 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 10 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 11 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 12 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 14 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 16 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 16 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 16 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 18 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 18 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 20 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 20 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 20 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 20 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 20 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 22 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 22 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 22 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 22 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 22 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 49 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 49 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 50 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 50 minutes
+=== jue 17 sept 2026 10:48:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789663681_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789663681_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789663681_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789663681_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789663681_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 1 second
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 2 seconds
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 3 seconds
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 4 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 6 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 6 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 8 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 10 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 12 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 13 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 14 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 16 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 18 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 18 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 18 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 20 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 20 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 22 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 22 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 22 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 22 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 22 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 24 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 24 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 24 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 24 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 24 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 51 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 51 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 52 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 52 minutes
+=== jue 17 sept 2026 10:50:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789663801_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789663801_2 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_intruso_1789663801_3 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789663801_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789663801_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 1 second
+p2_intruso_1789663801_3       proyecto2-intruso       Up 2 seconds
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 3 seconds
+p2_intruso_1789663801_1       proyecto2-intruso       Up 3 seconds
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 6 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 8 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 8 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 10 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 12 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 12 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 14 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 16 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 18 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 18 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 20 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 20 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 20 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 20 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 22 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 22 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 24 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 24 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 24 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 24 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 24 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 26 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 26 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 26 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 26 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 26 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 53 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 53 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 54 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 54 minutes
+=== jue 17 sept 2026 10:52:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789663921_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789663921_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789663921_3 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789663921_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789663921_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 1 second
+p2_intruso_1789663921_3       proyecto2-intruso       Up 1 second
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 2 seconds
+p2_intruso_1789663921_1       proyecto2-intruso       Up 3 seconds
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 2 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 8 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 10 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 10 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 12 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 14 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 14 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 16 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 18 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 18 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 20 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 20 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 22 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 22 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 22 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 22 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 24 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 24 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 24 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 26 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 26 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 26 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 26 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 26 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 28 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 28 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 28 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 28 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 28 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 55 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 55 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 56 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 56 minutes
+=== jue 17 sept 2026 10:54:02 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789664042_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_intruso_1789664042_2 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-cpu_1789664042_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789664042_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789664042_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up Less than a second
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 1 second
+p2_intruso_1789664042_2       proyecto2-intruso       Up 2 seconds
+p2_intruso_1789664042_1       proyecto2-intruso       Up 3 seconds
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 2 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 4 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 8 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 10 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 12 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 12 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 12 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 12 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 14 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 16 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 16 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 18 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 20 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 20 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 20 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 22 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 22 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 22 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 24 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 24 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 24 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 24 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 26 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 26 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 26 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 28 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 28 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 28 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 28 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 28 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 30 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 30 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 30 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 30 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 30 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 57 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 57 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up 58 minutes
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up 58 minutes
+=== jue 17 sept 2026 10:56:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789664161_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664161_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789664161_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664161_4 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789664161_5 (tipo=intruso, imagen=proyecto2-intruso)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_intruso_1789664161_5       proyecto2-intruso       Up Less than a second
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 2 seconds
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 3 seconds
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 4 seconds
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 2 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 2 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 2 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 2 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 4 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 6 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 6 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 6 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 10 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 12 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 12 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 14 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 14 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 14 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 14 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 16 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 18 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 18 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 18 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 20 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 20 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 22 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 22 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 22 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 24 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 24 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 24 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 24 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 26 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 26 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 26 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 26 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 28 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 28 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 28 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 30 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 30 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 30 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 30 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 30 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 32 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 32 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 32 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 32 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 32 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up 59 minutes
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up 59 minutes
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 10:58:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789664281_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_low-consumo_1789664281_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789664281_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789664281_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664281_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789664281_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789664281_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789664281_3      proyecto2-alto-ram      Up 2 seconds
+p2_low-consumo_1789664281_2   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789664281_1   proyecto2-low-consumo   Up 4 seconds
+p2_intruso_1789664161_5       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 2 minutes
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 4 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 4 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 4 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 4 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 6 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 6 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 6 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 6 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 8 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 8 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 8 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 10 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 10 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 12 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 12 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 14 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 14 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 16 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 16 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 16 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 18 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 20 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 20 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 20 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 22 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 22 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 22 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 24 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 24 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 24 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 26 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 26 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 26 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 26 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 28 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 28 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 28 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 28 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 30 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 30 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 30 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 32 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 32 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 32 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 32 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 32 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 34 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 34 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 34 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 34 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 34 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up About an hour
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up About an hour
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 11:00:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789664401_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_intruso_1789664401_2 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789664401_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789664401_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664401_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789664401_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789664401_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789664401_3      proyecto2-alto-ram      Up 2 seconds
+p2_intruso_1789664401_2       proyecto2-intruso       Up 3 seconds
+p2_low-consumo_1789664401_1   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789664281_5   proyecto2-low-consumo   Up About a minute
+p2_alto-cpu_1789664281_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789664281_3      proyecto2-alto-ram      Up 2 minutes
+p2_low-consumo_1789664281_2   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789664281_1   proyecto2-low-consumo   Up 2 minutes
+p2_intruso_1789664161_5       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 4 minutes
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 6 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 6 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 6 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 6 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 8 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 8 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 8 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 8 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 10 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 10 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 10 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 12 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 12 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 12 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 14 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 14 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 16 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 16 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 16 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 18 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 18 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 18 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 18 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 20 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 20 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 22 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 22 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 22 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 24 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 24 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 24 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 24 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 26 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 26 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 26 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 28 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 28 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 28 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 28 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 30 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 30 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 30 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 30 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 32 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 32 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 32 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 32 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 32 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 34 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 34 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 34 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 34 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 34 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 36 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 36 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 36 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 36 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 36 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up About an hour
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up About an hour
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 11:02:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789664521_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-cpu_1789664521_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789664521_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789664521_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664521_5 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_low-consumo_1789664521_5   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789664521_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-cpu_1789664521_3      proyecto2-alto-cpu      Up 1 second
+p2_alto-cpu_1789664521_2      proyecto2-alto-cpu      Up 2 seconds
+p2_intruso_1789664521_1       proyecto2-intruso       Up 5 seconds
+p2_low-consumo_1789664401_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789664401_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789664401_3      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789664401_2       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789664401_1   proyecto2-low-consumo   Up 2 minutes
+p2_low-consumo_1789664281_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789664281_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789664281_3      proyecto2-alto-ram      Up 4 minutes
+p2_low-consumo_1789664281_2   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789664281_1   proyecto2-low-consumo   Up 4 minutes
+p2_intruso_1789664161_5       proyecto2-intruso       Up 6 minutes
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 6 minutes
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 8 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 8 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 8 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 8 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 10 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 10 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 10 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 10 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 12 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 12 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 12 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 14 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 14 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 14 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 14 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 16 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 16 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 16 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 18 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 18 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 18 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 20 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 20 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 20 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 20 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 20 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 22 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 22 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 22 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 22 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 24 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 24 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 24 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 24 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 26 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 26 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 26 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 26 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 28 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 28 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 28 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 30 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 30 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 30 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 30 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 32 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 32 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 32 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 32 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 32 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 34 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 34 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 34 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 34 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 34 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 36 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 36 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 36 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 36 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 36 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 38 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 38 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 38 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 38 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 38 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up About an hour
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up About an hour
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 11:04:02 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789664642_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_low-consumo_1789664642_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789664642_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789664642_4 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789664642_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789664642_5      proyecto2-alto-cpu      Up Less than a second
+p2_low-consumo_1789664642_4   proyecto2-low-consumo   Up 1 second
+p2_alto-cpu_1789664642_3      proyecto2-alto-cpu      Up 2 seconds
+p2_low-consumo_1789664642_2   proyecto2-low-consumo   Up 3 seconds
+p2_low-consumo_1789664642_1   proyecto2-low-consumo   Up 4 seconds
+p2_low-consumo_1789664521_5   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789664521_4      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789664521_3      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-cpu_1789664521_2      proyecto2-alto-cpu      Up 2 minutes
+p2_intruso_1789664521_1       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789664401_5   proyecto2-low-consumo   Up 4 minutes
+p2_alto-cpu_1789664401_4      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789664401_3      proyecto2-alto-ram      Up 4 minutes
+p2_intruso_1789664401_2       proyecto2-intruso       Up 4 minutes
+p2_low-consumo_1789664401_1   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789664281_5   proyecto2-low-consumo   Up 6 minutes
+p2_alto-cpu_1789664281_4      proyecto2-alto-cpu      Up 6 minutes
+p2_alto-ram_1789664281_3      proyecto2-alto-ram      Up 6 minutes
+p2_low-consumo_1789664281_2   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789664281_1   proyecto2-low-consumo   Up 6 minutes
+p2_intruso_1789664161_5       proyecto2-intruso       Up 8 minutes
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 8 minutes
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 8 minutes
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 8 minutes
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 10 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 10 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 10 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 10 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 10 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 12 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 12 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 12 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 12 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 12 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 14 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 14 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 14 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 14 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 14 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 16 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 16 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 16 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 18 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 18 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 18 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 18 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 18 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 20 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 20 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 20 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 20 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 20 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 22 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 22 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 22 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 22 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 22 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 24 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 24 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 24 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 24 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 24 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 26 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 26 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 26 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 26 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 26 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 28 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 28 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 28 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 28 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 28 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 30 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 30 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 30 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 30 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 32 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 32 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 32 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 32 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 32 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 34 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 34 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 34 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 34 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 34 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 36 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 36 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 36 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 36 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 36 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 38 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 38 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 38 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 38 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 38 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 40 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 40 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 40 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 40 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 40 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up About an hour
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up About an hour
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 11:06:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789664761_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789664761_2 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789664761_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789664761_4 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789664761_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789664761_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-cpu_1789664761_4      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789664761_3      proyecto2-alto-ram      Up 3 seconds
+p2_alto-ram_1789664761_2      proyecto2-alto-ram      Up 41 seconds
+p2_alto-ram_1789664761_1      proyecto2-alto-ram      Up About a minute
+p2_alto-cpu_1789664642_5      proyecto2-alto-cpu      Up 3 minutes
+p2_low-consumo_1789664642_4   proyecto2-low-consumo   Up 3 minutes
+p2_alto-cpu_1789664642_3      proyecto2-alto-cpu      Up 3 minutes
+p2_low-consumo_1789664642_2   proyecto2-low-consumo   Up 3 minutes
+p2_low-consumo_1789664642_1   proyecto2-low-consumo   Up 3 minutes
+p2_low-consumo_1789664521_5   proyecto2-low-consumo   Up 5 minutes
+p2_alto-cpu_1789664521_4      proyecto2-alto-cpu      Up 5 minutes
+p2_alto-cpu_1789664521_3      proyecto2-alto-cpu      Up 5 minutes
+p2_alto-cpu_1789664521_2      proyecto2-alto-cpu      Up 5 minutes
+p2_intruso_1789664521_1       proyecto2-intruso       Up 5 minutes
+p2_low-consumo_1789664401_5   proyecto2-low-consumo   Up 7 minutes
+p2_alto-cpu_1789664401_4      proyecto2-alto-cpu      Up 7 minutes
+p2_alto-ram_1789664401_3      proyecto2-alto-ram      Up 7 minutes
+p2_intruso_1789664401_2       proyecto2-intruso       Up 7 minutes
+p2_low-consumo_1789664401_1   proyecto2-low-consumo   Up 7 minutes
+p2_low-consumo_1789664281_5   proyecto2-low-consumo   Up 9 minutes
+p2_alto-cpu_1789664281_4      proyecto2-alto-cpu      Up 9 minutes
+p2_alto-ram_1789664281_3      proyecto2-alto-ram      Up 9 minutes
+p2_low-consumo_1789664281_2   proyecto2-low-consumo   Up 9 minutes
+p2_low-consumo_1789664281_1   proyecto2-low-consumo   Up 9 minutes
+p2_intruso_1789664161_5       proyecto2-intruso       Up 11 minutes
+p2_low-consumo_1789664161_4   proyecto2-low-consumo   Up 11 minutes
+p2_alto-cpu_1789664161_3      proyecto2-alto-cpu      Up 11 minutes
+p2_low-consumo_1789664161_2   proyecto2-low-consumo   Up 11 minutes
+p2_alto-cpu_1789664161_1      proyecto2-alto-cpu      Up 11 minutes
+p2_alto-cpu_1789664042_5      proyecto2-alto-cpu      Up 13 minutes
+p2_alto-ram_1789664042_4      proyecto2-alto-ram      Up 13 minutes
+p2_alto-cpu_1789664042_3      proyecto2-alto-cpu      Up 13 minutes
+p2_intruso_1789664042_2       proyecto2-intruso       Up 13 minutes
+p2_intruso_1789664042_1       proyecto2-intruso       Up 13 minutes
+p2_alto-cpu_1789663921_5      proyecto2-alto-cpu      Up 15 minutes
+p2_alto-ram_1789663921_4      proyecto2-alto-ram      Up 15 minutes
+p2_intruso_1789663921_3       proyecto2-intruso       Up 15 minutes
+p2_low-consumo_1789663921_2   proyecto2-low-consumo   Up 15 minutes
+p2_intruso_1789663921_1       proyecto2-intruso       Up 15 minutes
+p2_low-consumo_1789663801_5   proyecto2-low-consumo   Up 17 minutes
+p2_alto-ram_1789663801_4      proyecto2-alto-ram      Up 17 minutes
+p2_intruso_1789663801_3       proyecto2-intruso       Up 17 minutes
+p2_alto-ram_1789663801_2      proyecto2-alto-ram      Up 17 minutes
+p2_intruso_1789663801_1       proyecto2-intruso       Up 17 minutes
+p2_low-consumo_1789663681_5   proyecto2-low-consumo   Up 19 minutes
+p2_alto-cpu_1789663681_4      proyecto2-alto-cpu      Up 19 minutes
+p2_alto-cpu_1789663681_3      proyecto2-alto-cpu      Up 19 minutes
+p2_low-consumo_1789663681_2   proyecto2-low-consumo   Up 19 minutes
+p2_alto-cpu_1789663681_1      proyecto2-alto-cpu      Up 19 minutes
+p2_low-consumo_1789663561_5   proyecto2-low-consumo   Up 21 minutes
+p2_alto-ram_1789663561_4      proyecto2-alto-ram      Up 21 minutes
+p2_alto-cpu_1789663561_3      proyecto2-alto-cpu      Up 21 minutes
+p2_alto-cpu_1789663561_2      proyecto2-alto-cpu      Up 21 minutes
+p2_low-consumo_1789663561_1   proyecto2-low-consumo   Up 21 minutes
+p2_low-consumo_1789663441_5   proyecto2-low-consumo   Up 23 minutes
+p2_alto-ram_1789663441_4      proyecto2-alto-ram      Up 23 minutes
+p2_alto-ram_1789663441_3      proyecto2-alto-ram      Up 23 minutes
+p2_alto-cpu_1789663441_2      proyecto2-alto-cpu      Up 23 minutes
+p2_alto-ram_1789663441_1      proyecto2-alto-ram      Up 23 minutes
+p2_low-consumo_1789663321_5   proyecto2-low-consumo   Up 25 minutes
+p2_low-consumo_1789663321_4   proyecto2-low-consumo   Up 25 minutes
+p2_alto-cpu_1789663321_3      proyecto2-alto-cpu      Up 25 minutes
+p2_low-consumo_1789663321_2   proyecto2-low-consumo   Up 25 minutes
+p2_intruso_1789663321_1       proyecto2-intruso       Up 25 minutes
+p2_alto-cpu_1789663201_5      proyecto2-alto-cpu      Up 27 minutes
+p2_alto-ram_1789663201_4      proyecto2-alto-ram      Up 27 minutes
+p2_alto-ram_1789663201_3      proyecto2-alto-ram      Up 27 minutes
+p2_alto-cpu_1789663201_2      proyecto2-alto-cpu      Up 27 minutes
+p2_low-consumo_1789663201_1   proyecto2-low-consumo   Up 27 minutes
+p2_low-consumo_1789663081_5   proyecto2-low-consumo   Up 29 minutes
+p2_intruso_1789663081_4       proyecto2-intruso       Up 29 minutes
+p2_alto-cpu_1789663081_3      proyecto2-alto-cpu      Up 29 minutes
+p2_low-consumo_1789663081_2   proyecto2-low-consumo   Up 29 minutes
+p2_alto-cpu_1789663081_1      proyecto2-alto-cpu      Up 29 minutes
+p2_alto-cpu_1789662961_5      proyecto2-alto-cpu      Up 31 minutes
+p2_alto-ram_1789662961_4      proyecto2-alto-ram      Up 31 minutes
+p2_alto-ram_1789662961_3      proyecto2-alto-ram      Up 31 minutes
+p2_alto-cpu_1789662961_2      proyecto2-alto-cpu      Up 31 minutes
+p2_low-consumo_1789662961_1   proyecto2-low-consumo   Up 31 minutes
+p2_low-consumo_1789662841_5   proyecto2-low-consumo   Up 33 minutes
+p2_alto-cpu_1789662841_4      proyecto2-alto-cpu      Up 33 minutes
+p2_alto-cpu_1789662841_3      proyecto2-alto-cpu      Up 33 minutes
+p2_alto-ram_1789662841_2      proyecto2-alto-ram      Up 33 minutes
+p2_alto-cpu_1789662841_1      proyecto2-alto-cpu      Up 33 minutes
+p2_intruso_1789662721_5       proyecto2-intruso       Up 35 minutes
+p2_alto-cpu_1789662721_4      proyecto2-alto-cpu      Up 35 minutes
+p2_alto-cpu_1789662721_3      proyecto2-alto-cpu      Up 35 minutes
+p2_low-consumo_1789662721_2   proyecto2-low-consumo   Up 35 minutes
+p2_alto-ram_1789662721_1      proyecto2-alto-ram      Up 35 minutes
+p2_alto-ram_1789662601_5      proyecto2-alto-ram      Up 37 minutes
+p2_alto-cpu_1789662601_4      proyecto2-alto-cpu      Up 37 minutes
+p2_alto-ram_1789662601_3      proyecto2-alto-ram      Up 37 minutes
+p2_intruso_1789662601_2       proyecto2-intruso       Up 37 minutes
+p2_alto-cpu_1789662601_1      proyecto2-alto-cpu      Up 37 minutes
+p2_intruso_1789662481_5       proyecto2-intruso       Up 39 minutes
+p2_alto-cpu_1789662481_4      proyecto2-alto-cpu      Up 39 minutes
+p2_alto-cpu_1789662481_3      proyecto2-alto-cpu      Up 39 minutes
+p2_low-consumo_1789662481_2   proyecto2-low-consumo   Up 39 minutes
+p2_alto-cpu_1789662481_1      proyecto2-alto-cpu      Up 39 minutes
+p2_alto-ram_1789662361_5      proyecto2-alto-ram      Up 41 minutes
+p2_intruso_1789662361_4       proyecto2-intruso       Up 41 minutes
+p2_low-consumo_1789662361_3   proyecto2-low-consumo   Up 41 minutes
+p2_low-consumo_1789662361_2   proyecto2-low-consumo   Up 41 minutes
+p2_alto-ram_1789662361_1      proyecto2-alto-ram      Up 41 minutes
+p2_intruso_1789662228_5       proyecto2-intruso       Up 43 minutes
+p2_alto-ram_1789662228_4      proyecto2-alto-ram      Up 43 minutes
+p2_alto-ram_1789662228_3      proyecto2-alto-ram      Up 43 minutes
+p2_low-consumo_1789662228_2   proyecto2-low-consumo   Up 43 minutes
+p2_alto-ram_1789662228_1      proyecto2-alto-ram      Up 43 minutes
+p2_alto-ram_1789660583_5      proyecto2-alto-ram      Up About an hour
+p2_alto-cpu_1789660583_1      proyecto2-alto-cpu      Up About an hour
+p2_low-consumo_1789660561_5   proyecto2-low-consumo   Up About an hour
+p2_low-consumo_1789660561_3   proyecto2-low-consumo   Up About an hour
+=== jue 17 sept 2026 23:44:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789710241_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789710241_2 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_low-consumo_1789710241_3 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789710241_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789710241_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789710241_5      proyecto2-alto-ram      Up Less than a second
+p2_alto-ram_1789710241_4      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789710241_3   proyecto2-low-consumo   Up Less than a second
+p2_alto-ram_1789710241_2      proyecto2-alto-ram      Up 1 second
+p2_intruso_1789710241_1       proyecto2-intruso       Up 1 second
+p2_low-consumo_1789707783_5   proyecto2-low-consumo   Up 40 minutes
+p2_low-consumo_1789707783_4   proyecto2-low-consumo   Up 40 minutes
+p2_alto-ram_1789707783_3      proyecto2-alto-ram      Up 40 minutes
+p2_alto-cpu_1789707783_2      proyecto2-alto-cpu      Up 40 minutes
+p2_alto-cpu_1789707783_1      proyecto2-alto-cpu      Up 40 minutes
+=== jue 17 sept 2026 23:46:01 CST: lanzando 5 contenedores ===
+  [OK] p2_intruso_1789710361_1 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_low-consumo_1789710361_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-cpu_1789710361_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789710361_4 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789710361_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789710361_5      proyecto2-alto-ram      Up Less than a second
+p2_intruso_1789710361_4       proyecto2-intruso       Up Less than a second
+p2_alto-cpu_1789710361_3      proyecto2-alto-cpu      Up Less than a second
+p2_low-consumo_1789710361_2   proyecto2-low-consumo   Up 1 second
+p2_intruso_1789710361_1       proyecto2-intruso       Up 1 second
+p2_alto-ram_1789710241_5      proyecto2-alto-ram      Up 2 minutes
+p2_alto-ram_1789710241_4      proyecto2-alto-ram      Up 2 minutes
+p2_low-consumo_1789710241_3   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789710241_2      proyecto2-alto-ram      Up 2 minutes
+p2_intruso_1789710241_1       proyecto2-intruso       Up 2 minutes
+p2_low-consumo_1789707783_5   proyecto2-low-consumo   Up 42 minutes
+p2_low-consumo_1789707783_4   proyecto2-low-consumo   Up 42 minutes
+p2_alto-ram_1789707783_3      proyecto2-alto-ram      Up 42 minutes
+p2_alto-cpu_1789707783_2      proyecto2-alto-cpu      Up 42 minutes
+p2_alto-cpu_1789707783_1      proyecto2-alto-cpu      Up 42 minutes
+=== jue 17 sept 2026 23:50:01 CST: lanzando 5 contenedores ===
+  [OK] p2_low-consumo_1789710601_1 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_low-consumo_1789710601_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789710601_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_intruso_1789710601_4 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_intruso_1789710601_5 (tipo=intruso, imagen=proyecto2-intruso)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_intruso_1789710601_5       proyecto2-intruso       Up Less than a second
+p2_intruso_1789710601_4       proyecto2-intruso       Up Less than a second
+p2_alto-ram_1789710601_3      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789710601_2   proyecto2-low-consumo   Up Less than a second
+p2_low-consumo_1789710601_1   proyecto2-low-consumo   Up 1 second
+p2_alto-ram_1789710512_5      proyecto2-alto-ram      Up About a minute
+p2_low-consumo_1789710512_4   proyecto2-low-consumo   Up About a minute
+p2_alto-cpu_1789710512_3      proyecto2-alto-cpu      Up About a minute
+p2_low-consumo_1789710512_2   proyecto2-low-consumo   Up About a minute
+p2_low-consumo_1789710512_1   proyecto2-low-consumo   Up About a minute
+=== jue 17 sept 2026 23:52:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789710721_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789710721_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_intruso_1789710721_3 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_intruso_1789710721_4 (tipo=intruso, imagen=proyecto2-intruso)
+  [OK] p2_alto-ram_1789710721_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789710721_5      proyecto2-alto-ram      Up Less than a second
+p2_intruso_1789710721_4       proyecto2-intruso       Up Less than a second
+p2_intruso_1789710721_3       proyecto2-intruso       Up Less than a second
+p2_alto-cpu_1789710721_2      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789710721_1      proyecto2-alto-ram      Up 1 second
+p2_alto-ram_1789710601_3      proyecto2-alto-ram      Up 2 minutes
+p2_low-consumo_1789710601_1   proyecto2-low-consumo   Up 2 minutes
+p2_alto-ram_1789710512_5      proyecto2-alto-ram      Up 3 minutes
+p2_low-consumo_1789710512_4   proyecto2-low-consumo   Up 3 minutes
+p2_low-consumo_1789710512_2   proyecto2-low-consumo   Up 3 minutes
+=== jue 17 sept 2026 23:54:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-cpu_1789710841_1 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_low-consumo_1789710841_2 (tipo=low-consumo, imagen=proyecto2-low-consumo)
+  [OK] p2_alto-ram_1789710841_3 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789710841_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-ram_1789710841_5 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-ram_1789710841_5      proyecto2-alto-ram      Up Less than a second
+p2_alto-ram_1789710841_4      proyecto2-alto-ram      Up Less than a second
+p2_alto-ram_1789710841_3      proyecto2-alto-ram      Up Less than a second
+p2_low-consumo_1789710841_2   proyecto2-low-consumo   Up Less than a second
+p2_alto-cpu_1789710841_1      proyecto2-alto-cpu      Up 1 second
+p2_alto-cpu_1789710721_2      proyecto2-alto-cpu      Up 2 minutes
+p2_alto-ram_1789710601_3      proyecto2-alto-ram      Up 4 minutes
+p2_low-consumo_1789710601_1   proyecto2-low-consumo   Up 4 minutes
+p2_low-consumo_1789710512_4   proyecto2-low-consumo   Up 5 minutes
+p2_low-consumo_1789710512_2   proyecto2-low-consumo   Up 5 minutes
+=== jue 17 sept 2026 23:56:01 CST: lanzando 5 contenedores ===
+  [OK] p2_alto-ram_1789710961_1 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789710961_2 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-cpu_1789710961_3 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+  [OK] p2_alto-ram_1789710961_4 (tipo=alto-ram, imagen=proyecto2-alto-ram)
+  [OK] p2_alto-cpu_1789710961_5 (tipo=alto-cpu, imagen=proyecto2-alto-cpu)
+=== Contenedores del proyecto actualmente corriendo ===
+NAMES                         IMAGE                   STATUS
+p2_alto-cpu_1789710961_5      proyecto2-alto-cpu      Up Less than a second
+p2_alto-ram_1789710961_4      proyecto2-alto-ram      Up Less than a second
+p2_alto-cpu_1789710961_3      proyecto2-alto-cpu      Up Less than a second
+p2_alto-cpu_1789710961_2      proyecto2-alto-cpu      Up 1 second
+p2_alto-ram_1789710961_1      proyecto2-alto-ram      Up 1 second
+p2_low-consumo_1789710841_2   proyecto2-low-consumo   Up 2 minutes
+p2_alto-cpu_1789710721_2      proyecto2-alto-cpu      Up 4 minutes
+p2_alto-ram_1789710601_3      proyecto2-alto-ram      Up 6 minutes
+p2_low-consumo_1789710601_1   proyecto2-low-consumo   Up 6 minutes
+p2_low-consumo_1789710512_4   proyecto2-low-consumo   Up 7 minutes

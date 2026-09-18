@@ -10,21 +10,22 @@ import (
 )
 
 type Container struct {
-	ID        string
-	Name      string
-	Tipo      string // "low-consumo" | "alto-ram" | "alto-cpu" | "intruso"
-	CreatedAt time.Time
+	ID         string
+	PID        int
+	Name       string
+	Tipo       string
+	CreatedAt  time.Time
+	RSSKB      uint64
+	VSZKB      uint64
+	CPUPercent float64
+	MemPercent float64
 }
 
 const managedLabelFilter = "label=proyecto2.managed=true"
-
-
 const dockerCreatedLayout = "2006-01-02 15:04:05 -0700 MST"
-
 
 func ListManaged() ([]Container, error) {
 	format := `{{.ID}}|||{{.Names}}|||{{.Label "proyecto2.tipo"}}|||{{.CreatedAt}}`
-
 	cmd := exec.Command("docker", "ps",
 		"--filter", managedLabelFilter,
 		"--format", format,
@@ -33,24 +34,20 @@ func ListManaged() ([]Container, error) {
 	if err != nil {
 		return nil, fmt.Errorf("docker ps fallo: %w (salida: %s)", err, strings.TrimSpace(string(out)))
 	}
-
 	trimmed := strings.TrimSpace(string(out))
 	if trimmed == "" {
-		return nil, nil // no hay contenedores del proyecto corriendo
+		return nil, nil
 	}
-
 	var result []Container
 	for _, line := range strings.Split(trimmed, "\n") {
 		parts := strings.Split(line, "|||")
 		if len(parts) < 4 {
-			continue // linea rara/incompleta, la ignoramos
+			continue
 		}
-
 		created, err := time.Parse(dockerCreatedLayout, parts[3])
 		if err != nil {
 			created = time.Time{}
 		}
-
 		result = append(result, Container{
 			ID:        parts[0],
 			Name:      parts[1],
@@ -67,25 +64,22 @@ func GetPID(id string) (int, error) {
 	if err != nil {
 		return 0, fmt.Errorf("docker inspect (PID) fallo para %s: %w", id, err)
 	}
-
 	pid, err := strconv.Atoi(strings.TrimSpace(string(out)))
 	if err != nil {
 		return 0, fmt.Errorf("PID invalido para %s: %w", id, err)
 	}
 	return pid, nil
 }
-func Kill(pid int) error {
-	if err := syscall.Kill(pid, syscall.SIGKILL); err != nil {
-		return fmt.Errorf("kill(%d) fallo: %w", pid, err)
-	}
-	return nil
-}
 
-func KillByDocker(id string) error {
-	cmd := exec.Command("docker", "kill", id)
-	out, err := cmd.CombinedOutput()
+// Kill envia SIGKILL directamente al PID del host via syscall.Kill(),
+// lo que dispara sys_enter_kill y permite la confirmacion por eBPF.
+func Kill(id string) error {
+	pid, err := GetPID(id)
 	if err != nil {
-		return fmt.Errorf("docker kill %s fallo: %w (salida: %s)", id, err, strings.TrimSpace(string(out)))
+		return fmt.Errorf("no se pudo obtener PID para kill: %w", err)
+	}
+	if err := syscall.Kill(-pid, syscall.SIGKILL); err != nil {
+    	return fmt.Errorf("syscall.Kill(-%d, SIGKILL) fallo: %w", pid, err)
 	}
 	return nil
 }
