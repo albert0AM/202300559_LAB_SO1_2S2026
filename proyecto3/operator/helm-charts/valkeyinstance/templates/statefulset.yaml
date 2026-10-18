@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Release.Name }}-valkey
+  labels:
+    app: {{ .Release.Name }}-valkey
+spec:
+  serviceName: {{ .Release.Name }}-valkey
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-valkey
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-valkey
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: valkey
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args: ["--appendonly", "yes", "--dir", "/data"]
+          ports:
+            - containerPort: 6379
+          volumeMounts:
+            - name: data
+              mountPath: /data
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+  {{- if .Values.persistence.enabled }}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: {{ .Values.persistence.size }}
+  {{- end }}

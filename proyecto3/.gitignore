@@ -1,0 +1,6 @@
+*.tar
+*.tar.gz
+*.pb.go.bak
+/operator/bin/
+__pycache__/
+*.pyc

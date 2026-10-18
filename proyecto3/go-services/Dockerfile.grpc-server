@@ -1,0 +1,11 @@
+FROM golang:1.27 AS build
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 go build -o /out/grpc-server ./cmd/grpc-server
+
+FROM scratch
+COPY --from=build /out/grpc-server /grpc-server
+EXPOSE 50051
+ENTRYPOINT ["/grpc-server"]

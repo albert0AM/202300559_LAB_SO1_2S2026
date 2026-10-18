@@ -1,0 +1,9 @@
+apiVersion: cache.mumn.io/v1alpha1
+kind: ValkeyInstance
+metadata:
+  name: valkey
+  namespace: mumn
+spec:
+  persistence:
+    enabled: true
+    size: 1Gi

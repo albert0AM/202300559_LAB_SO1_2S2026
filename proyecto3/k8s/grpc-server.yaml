@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-server
+  namespace: mumn
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: grpc-server }
+  template:
+    metadata:
+      labels: { app: grpc-server }
+    spec:
+      imagePullSecrets:
+        - name: zot-cred
+      containers:
+        - name: grpc-server
+          image: 34-132-3-94.nip.io/mumn/grpc-server:v1
+          ports:
+            - containerPort: 50051
+          env:
+            - name: RABBITMQ_URL
+              value: "amqp://guest:guest@rabbitmq:5672/"
+          resources:
+            requests: { cpu: 100m, memory: 64Mi }
+            limits: { cpu: 500m, memory: 256Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-server-svc
+  namespace: mumn
+spec:
+  selector: { app: grpc-server }
+  ports:
+    - port: 50051
+      targetPort: 50051

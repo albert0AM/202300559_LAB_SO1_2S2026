@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: valkey/valkey
+  tag: "8"
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+
+service:
+  port: 6379
+
+persistence:
+  enabled: true
+  size: 1Gi
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi

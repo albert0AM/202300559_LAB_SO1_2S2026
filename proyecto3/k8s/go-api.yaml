@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-api
+  namespace: mumn
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: go-api }
+  template:
+    metadata:
+      labels: { app: go-api }
+    spec:
+      imagePullSecrets:
+        - name: zot-cred
+      containers:
+        - name: go-api
+          image: 34-132-3-94.nip.io/mumn/go-api:v1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: GRPC_SERVER_ADDR
+              value: "grpc-server-svc:50051"
+          readinessProbe:
+            httpGet: { path: /health, port: 8080 }
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          resources:
+            requests: { cpu: 100m, memory: 64Mi }
+            limits: { cpu: 500m, memory: 256Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-api-svc
+  namespace: mumn
+spec:
+  selector: { app: go-api }
+  ports:
+    - port: 8080
+      targetPort: 8080
