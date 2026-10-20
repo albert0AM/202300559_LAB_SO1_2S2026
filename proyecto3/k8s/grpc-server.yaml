@@ -15,12 +15,30 @@ spec:
         - name: zot-cred
       containers:
         - name: grpc-server
-          image: 34-132-3-94.nip.io/mumn/grpc-server:v1
+          image: 34-132-3-94.nip.io/mumn/grpc-server:v2
           ports:
             - containerPort: 50051
           env:
+            - name: RABBITMQ_WRITER_ADDR
+              value: "http://localhost:8082/publish"
+          readinessProbe:
+            tcpSocket: { port: 50051 }
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          resources:
+            requests: { cpu: 100m, memory: 64Mi }
+            limits: { cpu: 500m, memory: 256Mi }
+        - name: rabbitmq-writer
+          image: 34-132-3-94.nip.io/mumn/rabbitmq-writer:v1
+          ports:
+            - containerPort: 8082
+          env:
             - name: RABBITMQ_URL
               value: "amqp://guest:guest@rabbitmq:5672/"
+          readinessProbe:
+            httpGet: { path: /health, port: 8082 }
+            initialDelaySeconds: 2
+            periodSeconds: 5
           resources:
             requests: { cpu: 100m, memory: 64Mi }
             limits: { cpu: 500m, memory: 256Mi }

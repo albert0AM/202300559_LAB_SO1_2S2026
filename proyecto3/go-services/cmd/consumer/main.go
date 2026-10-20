@@ -87,8 +87,10 @@ func main() {
 		log.Fatal(err)
 	}
 	log.Println("consumer listo")
+	msgsClosed := make(chan struct{}, 4)
 	for w := 0; w < 4; w++ {
 		go func() {
+			defer func() { msgsClosed <- struct{}{} }()
 			for d := range msgs {
 				var r report
 				if err := json.Unmarshal(d.Body, &r); err != nil {
@@ -106,5 +108,11 @@ func main() {
 			}
 		}()
 	}
-	select {}
+	connClosed := conn.NotifyClose(make(chan *amqp.Error, 1))
+	select {
+	case closeErr := <-connClosed:
+		log.Fatalf("conexion RabbitMQ cerrada: %v", closeErr)
+	case <-msgsClosed:
+		log.Fatal("canal de mensajes cerrado, reiniciando")
+	}
 }

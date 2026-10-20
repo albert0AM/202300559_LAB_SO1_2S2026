@@ -14,15 +14,29 @@ spec:
       imagePullSecrets:
         - name: zot-cred
       containers:
-        - name: go-api
-          image: 34-132-3-94.nip.io/mumn/go-api:v1
+        - name: go-api-rest
+          image: 34-132-3-94.nip.io/mumn/go-api-rest:v1
           ports:
             - containerPort: 8080
+          env:
+            - name: GRPC_CLIENT_ADDR
+              value: "http://localhost:8081/report"
+          readinessProbe:
+            httpGet: { path: /health, port: 8080 }
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          resources:
+            requests: { cpu: 100m, memory: 64Mi }
+            limits: { cpu: 500m, memory: 256Mi }
+        - name: go-api-grpcclient
+          image: 34-132-3-94.nip.io/mumn/go-api-grpcclient:v1
+          ports:
+            - containerPort: 8081
           env:
             - name: GRPC_SERVER_ADDR
               value: "grpc-server-svc:50051"
           readinessProbe:
-            httpGet: { path: /health, port: 8080 }
+            httpGet: { path: /health, port: 8081 }
             initialDelaySeconds: 2
             periodSeconds: 5
           resources:

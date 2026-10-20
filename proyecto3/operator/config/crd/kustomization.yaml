@@ -3,4 +3,5 @@
 # It should be run by config/default
 resources:
 - bases/cache.mumn.io_valkeyinstances.yaml
+- bases/cache.mumn.io_grafanainstances.yaml
 # +kubebuilder:scaffold:crdkustomizeresource

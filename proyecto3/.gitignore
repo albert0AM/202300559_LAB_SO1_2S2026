@@ -1,6 +1,7 @@
-*.tar
-*.tar.gz
-*.pb.go.bak
-/operator/bin/
 __pycache__/
 *.pyc
+target/
+*.tar.gz
+*.tar
+.DS_Store
+*.log

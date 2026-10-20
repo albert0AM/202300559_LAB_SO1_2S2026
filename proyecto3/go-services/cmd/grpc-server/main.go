@@ -1,64 +1,25 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"log"
 	"net"
+	"net/http"
 	"os"
 	"strings"
-	"sync"
 	"time"
 
-	amqp "github.com/rabbitmq/amqp091-go"
 	"google.golang.org/grpc"
 
 	pb "mumn/proto"
 )
 
-const queueName = "war_reports"
-
 type server struct {
 	pb.UnimplementedWarReportServiceServer
-	mu   sync.Mutex
-	conn *amqp.Connection
-	ch   *amqp.Channel
-	url  string
-}
-
-func (s *server) connect() error {
-	conn, err := amqp.Dial(s.url)
-	if err != nil {
-		return err
-	}
-	ch, err := conn.Channel()
-	if err != nil {
-		conn.Close()
-		return err
-	}
-	if _, err = ch.QueueDeclare(queueName, true, false, false, false, nil); err != nil {
-		conn.Close()
-		return err
-	}
-	s.conn, s.ch = conn, ch
-	return nil
-}
-
-func (s *server) publish(body []byte) error {
-	s.mu.Lock()
-	defer s.mu.Unlock()
-	if s.ch == nil || s.conn.IsClosed() {
-		if err := s.connect(); err != nil {
-			return err
-		}
-	}
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-	return s.ch.PublishWithContext(ctx, "", queueName, false, false, amqp.Publishing{
-		ContentType:  "application/json",
-		DeliveryMode: amqp.Persistent,
-		Body:         body,
-	})
+	writerURL string
+	client    *http.Client
 }
 
 func (s *server) SendReport(ctx context.Context, r *pb.WarReportRequest) (*pb.WarReportResponse, error) {
@@ -69,24 +30,29 @@ func (s *server) SendReport(ctx context.Context, r *pb.WarReportRequest) (*pb.Wa
 		"timestamp":         r.Timestamp,
 	}
 	body, _ := json.Marshal(msg)
-	if err := s.publish(body); err != nil {
-		log.Printf("error publicando en RabbitMQ: %v", err)
+	resp, err := s.client.Post(s.writerURL, "application/json", bytes.NewReader(body))
+	if err != nil {
+		log.Printf("error llamando al writer: %v", err)
 		return &pb.WarReportResponse{Status: "error"}, err
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return &pb.WarReportResponse{Status: "error"}, nil
 	}
 	return &pb.WarReportResponse{Status: "ok"}, nil
 }
 
 func main() {
-	url := os.Getenv("RABBITMQ_URL")
-	if url == "" {
-		url = "amqp://guest:guest@rabbitmq:5672/"
+	writerURL := os.Getenv("RABBITMQ_WRITER_ADDR")
+	if writerURL == "" {
+		writerURL = "http://localhost:8082/publish"
 	}
 	lis, err := net.Listen("tcp", ":50051")
 	if err != nil {
 		log.Fatal(err)
 	}
 	g := grpc.NewServer()
-	pb.RegisterWarReportServiceServer(g, &server{url: url})
+	pb.RegisterWarReportServiceServer(g, &server{writerURL: writerURL, client: &http.Client{Timeout: 5 * time.Second}})
 	log.Println("grpc-server escuchando en :50051")
 	log.Fatal(g.Serve(lis))
 }

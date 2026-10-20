@@ -62,4 +62,36 @@ rules:
   - "deployments"
   - "statefulsets"
 
+##
+## Rules for cache.mumn.io/v1alpha1, Kind: GrafanaInstance
+##
+- apiGroups:
+  - cache.mumn.io
+  resources:
+  - grafanainstances
+  - grafanainstances/status
+  - grafanainstances/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- verbs:
+  - "*"
+  apiGroups:
+  - ""
+  resources:
+  - "serviceaccounts"
+  - "services"
+  - "configmaps"
+- verbs:
+  - "*"
+  apiGroups:
+  - "apps"
+  resources:
+  - "deployments"
+
 # +kubebuilder:scaffold:rules

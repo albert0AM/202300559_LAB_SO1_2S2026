@@ -1,11 +1,12 @@
 replicaCount: 1
 
 image:
-  repository: valkey/valkey
+  repository: 34-132-3-94.nip.io/mumn/valkey
   tag: "8"
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: zot-cred
 
 service:
   port: 6379

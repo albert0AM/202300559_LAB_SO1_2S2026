@@ -1,0 +1,11 @@
+FROM golang:1.27 AS build
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 go build -o /out/go-api-rest ./cmd/go-api-rest
+
+FROM scratch
+COPY --from=build /out/go-api-rest /go-api-rest
+EXPOSE 8080
+ENTRYPOINT ["/go-api-rest"]

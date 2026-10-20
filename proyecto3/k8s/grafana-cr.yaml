@@ -1,0 +1,6 @@
+apiVersion: cache.mumn.io/v1alpha1
+kind: GrafanaInstance
+metadata:
+  name: mumn-grafana
+  namespace: mumn
+spec: {}
