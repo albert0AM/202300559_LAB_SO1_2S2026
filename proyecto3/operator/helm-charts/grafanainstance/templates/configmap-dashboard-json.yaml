@@ -5,25 +5,6 @@ metadata:
   labels:
     {{- include "grafanainstance.labels" . | nindent 4 }}
 data:
+  # el dashboard vive en su propio archivo dentro del chart, aca solo lo metemos al configmap
   mumn-dashboard.json: |
-    {
-      "title": "M.U.M.N.K8S Dashboard",
-      "tags": ["mumn"],
-      "timezone": "browser",
-      "schemaVersion": 36,
-      "version": 1,
-      "refresh": "5s",
-      "panels": [
-        { "title": "Max. Aviones en Aire", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 0, "y": 0}, "targets": [{"command": "get", "keyName": "planes:max", "query": "get planes:max", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Min. Aviones en Aire", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 4, "y": 0}, "targets": [{"command": "get", "keyName": "planes:min", "query": "get planes:min", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Max. Barcos en Mar", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 8, "y": 0}, "targets": [{"command": "get", "keyName": "ships:max", "query": "get ships:max", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Min. Barcos en Mar", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 12, "y": 0}, "targets": [{"command": "get", "keyName": "ships:min", "query": "get ships:min", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Moda de Aviones", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 0, "y": 4}, "targets": [{"command": "hgetall", "keyName": "freq:planes", "query": "hgetall freq:planes", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}, {"id": "sortBy", "options": {"sort": [{"field": "Value", "desc": true}]}}, {"id": "reduce", "options": {"reducers": ["first"], "mode": "seriesToRows"}}] },
-        { "title": "Moda de Barcos", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 4, "y": 4}, "targets": [{"command": "hgetall", "keyName": "freq:ships", "query": "hgetall freq:ships", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}, {"id": "sortBy", "options": {"sort": [{"field": "Value", "desc": true}]}}, {"id": "reduce", "options": {"reducers": ["first"], "mode": "seriesToRows"}}] },
-        { "title": "País Asignado", "type": "text", "gridPos": {"h": 4, "w": 4, "x": 8, "y": 4}, "options": {"content": "# GTM\nCarnet: 202300559", "mode": "markdown"} },
-        { "title": "Reportes Recibidos (GTM)", "type": "stat", "gridPos": {"h": 4, "w": 4, "x": 12, "y": 4}, "targets": [{"command": "hget", "keyName": "reports:count", "field": "GTM", "query": "hget reports:count GTM", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Top Paises: Aviones", "type": "barchart", "gridPos": {"h": 6, "w": 8, "x": 0, "y": 8}, "targets": [{"command": "zrevrange", "keyName": "top:planes", "query": "zrevrange top:planes 0 4 withscores", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Top Paises: Barcos", "type": "barchart", "gridPos": {"h": 6, "w": 8, "x": 8, "y": 8}, "targets": [{"command": "zrevrange", "keyName": "top:ships", "query": "zrevrange top:ships 0 4 withscores", "type": "command"}], "transformations": [{"id": "convertFieldType", "options": {"conversions": [{"targetField": "Value", "destinationType": "number"}]}}] },
-        { "title": "Evolución Temporal - GTM", "type": "timeseries", "gridPos": {"h": 8, "w": 16, "x": 0, "y": 14}, "targets": [{"command": "xrange", "keyName": "gtm:series", "query": "xrange gtm:series - +", "type": "command"}] }
-      ]
-    }
+{{ .Files.Get "dashboards/mumn-dashboard.json" | indent 4 }}

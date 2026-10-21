@@ -62,7 +62,7 @@ spec:
           - --leader-elect
           - --leader-election-id=operator
           - --health-probe-bind-address=:8081
-        image: 34-132-3-94.nip.io/mumn/valkey-operator:v1
+        image: 34-132-3-94.nip.io/mumn/valkey-operator:v5
         name: manager
         ports: []
         securityContext:

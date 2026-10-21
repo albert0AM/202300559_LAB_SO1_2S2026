@@ -5,4 +5,4 @@ kind: Kustomization
 images:
 - name: controller
   newName: 34-132-3-94.nip.io/mumn/valkey-operator
-  newTag: v2
+  newTag: v5
